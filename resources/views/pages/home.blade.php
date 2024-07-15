@@ -1,9 +1,17 @@
 @extends('layouts.app')
 
 @section('main-content')
-    <h1>
-        Titolo prova
-    </h1>
+<section class="jumbotron">
 
-    <img src="{{ Vite::asset('resources/img/1.webp') }}" alt="">
+</section>
+
+<div class="button-main">
+    <button>Current series</button>
+</div>
+
+<!--Aggiunta delle immagini in APPMAINPARZIALE-->
+<div class="cards">
+
+</div>
+</main>
 @endsection
