@@ -14,6 +14,7 @@
 
     <main>
         @yield('main-content')
+        @yield('main-products')
     </main>
 
     @include('partials.footer')

@@ -1,13 +1,27 @@
 @extends('layouts.app')
 
-@section('main-content')
+@section('main-products')
 
-<section class="jumbotron">
+<div class="my_products">
+    <section class="jumbotron">
 
-</section>
+    </section>
 
-<div class="button-main">
-    <button>Current series</button>
+    <div class="button-main">
+        <button>Current series</button>
+
+            <article>
+                @foreach ( $comics as $comic )
+                <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+                <h4>
+                    {{$comic['series']}}
+                </h4>
+                <p>
+                    {{$comic['price']}}
+                </p>
+                @endforeach
+            </article>
+    </div>
 </div>
 
 @endsection

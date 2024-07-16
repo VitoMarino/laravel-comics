@@ -5,10 +5,10 @@
     </nav>
     <nav>
         <ul>
-            @foreach ($elements as $element)
+            @foreach ($linksHeader as $linkHeader)
                 <li>
                     <a href="">
-                        {{ $element }}
+                        {{ $linkHeader }}
                     </a>
                 </li>
             @endforeach
