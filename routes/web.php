@@ -14,5 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.home');
+    $elements = [
+        '0' => 'Characters',
+        '1' => 'Movies',
+        '2' => 'Comics',
+        '3' => 'Tv',
+        '4' => 'Games',
+        '5' => 'Collectibles',
+        '6' => 'Videos',
+        '7' => 'Fans',
+        '8' => 'News',
+        '9' => 'Shop',
+    ];
+
+    return view('pages.home', compact('elements'));
+});
+
+Route::get('/', function () {
+    return view('pages.products');
 });
