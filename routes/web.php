@@ -54,7 +54,7 @@ Route::get('/', function () {
         ],
     ];
 
-    return view('pages.home', compact('linksHeader'), compact('linksFooter'));
+    return view('pages.home', compact('linksHeader', 'linksFooter'));
 });
 
 Route::get('/products', function () {
